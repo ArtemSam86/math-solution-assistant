@@ -29,7 +29,7 @@ class Calculator:
         try:
             expression = expression.replace(' ', '').replace('**', '^')
             
-            expression = expression.replace('√', 'sqrt')
+            expression = expression.replace('√', str(math.sqrt))
             expression = expression.replace('pi', str(math.pi))
             expression = expression.replace('π', str(math.pi))
             expression = expression.replace('e', str(math.e))
