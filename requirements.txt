@@ -1,0 +1,6 @@
+python-telegram-bot==22.5
+pytz==2025.2
+sympy==1.14.0
+matplotlib==3.10.8
+numpy==2.4.1
+python-dotenv==1.2.1

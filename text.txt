@@ -1,0 +1,19 @@
+math_bot/
+├── bot.py                    # Точка входа, запуск бота
+├── bot_instance.py           # Основной класс бота
+├── handlers.py               # Обработчики сообщений
+├── services.py               # Контейнер сервисов
+├── process_manager.py        # Управление процессами
+├── keyboards.py              # Клавиатуры Telegram
+├── config.py                 # Конфигурация приложения
+├── database.py               # Работа с SQLite базой
+├── message_formatter.py      # Форматирование сообщений
+├── graph_plotter.py          # Построение графиков
+├── calculator.py             # Вычисления
+├── equation_solver.py        # Решение уравнений
+├── utils.py                  # Вспомогательные функции
+├── requirements.txt          # Зависимости проекта
+├── .env                      # Переменные окружения
+├── math_bot.db               # База данных
+├── bot.log                   # Логи приложения
+└── math_bot.pid              # PID файл
