@@ -14,6 +14,6 @@ math_bot/
 ├── utils.py                  # Вспомогательные функции
 ├── requirements.txt          # Зависимости проекта
 ├── .env                      # Переменные окружения
-├── math_bot.db               # База данных
+├── math_bot.db               # База данных 
 ├── bot.log                   # Логи приложения
 └── math_bot.pid              # PID файл
