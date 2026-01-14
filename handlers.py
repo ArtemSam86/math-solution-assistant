@@ -20,7 +20,7 @@ class Handlers:
             "📊 Построить график": self.graph_start,
             "🔢 Калькулятор": self.calc_start,
             "🕐 Текущее время": self.get_time,
-            "📚 Помощь": self.help_command,
+            "📚 Помощь": self.help,
             "ℹ️ О боте": self.about,
             "📊 Статистика": self.stats,
             "❌ Скрыть клавиатуру": self.hide_keyboard,
@@ -52,7 +52,7 @@ class Handlers:
         )
         database.log_command(user.id, "start")
     
-    async def help_command(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
+    async def help(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         help_text = """
             🤖 <b>Math Helper Bot - Помощь</b>
             

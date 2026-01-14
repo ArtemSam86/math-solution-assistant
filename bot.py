@@ -25,7 +25,7 @@ def main():
     process_manager.register_handlers()
 
     print("=" * 50)
-    print("🤖 Math Helper Bot (версия 3.0) запускается...")
+    print("🤖 Math Helper Bot (версия 0.0.1) запускается...")
     print("=" * 50)
 
     database.init_db()

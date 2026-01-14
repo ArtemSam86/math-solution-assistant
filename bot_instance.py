@@ -16,7 +16,7 @@ class MathHelperBot:
         """Настройка обработчиков команд"""
         
         self.application.add_handler(CommandHandler("start", self.handlers.start))
-        self.application.add_handler(CommandHandler("help", self.handlers.help_command))
+        self.application.add_handler(CommandHandler("help", self.handlers.help))
         self.application.add_handler(CommandHandler("solve", self.handlers.solve_equation_command))
         self.application.add_handler(CommandHandler("calc", self.handlers.calc_command))
         self.application.add_handler(CommandHandler("about", self.handlers.about))
