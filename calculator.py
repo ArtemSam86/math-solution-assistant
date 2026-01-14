@@ -27,7 +27,7 @@ class Calculator:
     def evaluate(self, expression: str) -> Union[float, str]:
         """Основной метод вычисления выражения"""
         try:
-            expression = expression.replace(' ', '').replace('**', '^')
+            expression = expression.replace(' ', '').replace('^', '**')
             
             expression = expression.replace('√', 'sqrt')
             expression = expression.replace('pi', str(math.pi))
