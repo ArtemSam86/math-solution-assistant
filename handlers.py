@@ -54,7 +54,7 @@ class Handlers:
     
     async def help(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         help_text = """
-             <b>🤖 Math Helper Bot - Помощь</b>
+             <b>🤖 Math Solution Assistant - Помощь</b>
 
 <b>Основные команды:</b>
 /start - Начать работу с ботом
