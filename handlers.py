@@ -54,42 +54,37 @@ class Handlers:
     
     async def help(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         help_text = """
-             🤖 **Math Helper Bot - Помощь**
+             <b>🤖 Math Helper Bot - Помощь</b>
 
-**Основные команды:**
+<b>Основные команды:</b>
 /start - Начать работу с ботом
 /help - Показать это сообщение
 /about - Информация о боте
 /stats - Статистика использования
 
-**Математические функции:**
-/solve <уравнение> - Решить уравнение
+<b>Математические функции:</b>
+/solve &lt;уравнение&gt; - Решить уравнение
     Примеры:
     • /solve 2*x + 5 = 15
     • /solve x**2 - 4 = 0
     • /solve sin(x) = 0.5
 
-/graph <функция> - Построить график
+/graph &lt;функция&gt; - Построить график
     Примеры:
     • /graph x^2
     • /graph sin(x)*cos(x)
     • /graph exp(-x^2/2)
 
-/calc <выражение> - Калькулятор
+/calc &lt;выражение&gt; - Калькулятор
     Пример:
     • /calc 2+2*2
 
-**Или используйте кнопки на клавиатуре!** ⬇️
+<b>Или используйте кнопки на клавиатуре!</b> ⬇️
             """
-        # await update.message.reply_text(
-        #     help_text,
-        #     parse_mode='Markdown',
-        #     reply_markup=get_main_keyboard()
-        # )
-        await context.bot.send_message(
-            chat_id=update.effective_chat.id,
-            text=help_text,  # Текст в выбранном формате
-            parse_mode='Markdown'  # Или 'HTML', или 'MarkdownV2'
+        await update.message.reply_text(
+            help_text,
+            parse_mode='HTML',
+            reply_markup=get_main_keyboard()
         )
         database.log_command(update.effective_user.id, "help")
     
