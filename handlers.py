@@ -459,7 +459,7 @@ class Handlers:
     
     async def about(self, update: Update, context: ContextTypes.DEFAULT_TYPE):
         about_text = """
-🤖 <b>Math Helper Bot</b>
+🤖 <b>Math Solution Assistant</b>
 
 <b>Версия:</b> 0.0.1
 <b>Разработчик:</b> Самарский Илья, Минаев Константин
