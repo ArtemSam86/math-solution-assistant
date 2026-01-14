@@ -356,7 +356,7 @@ class Handlers:
         elif text in ['+', '-', '*', '/', '.', '(', ')', '^']:
             expression += text
         elif text == '√':
-            expression += '√'
+            expression += 'sqrt('
         elif text == 'sin':
             expression += 'sin('
         elif text == 'cos':
