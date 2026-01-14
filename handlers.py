@@ -81,10 +81,15 @@ class Handlers:
 
 **Или используйте кнопки на клавиатуре!** ⬇️
             """
-        await update.message.reply_text(
-            help_text,
-            parse_mode='Markdown',
-            reply_markup=get_main_keyboard()
+        # await update.message.reply_text(
+        #     help_text,
+        #     parse_mode='Markdown',
+        #     reply_markup=get_main_keyboard()
+        # )
+        await context.bot.send_message(
+            chat_id=update.effective_chat.id,
+            text=help_text,  # Текст в выбранном формате
+            parse_mode='Markdown'  # Или 'HTML', или 'MarkdownV2'
         )
         database.log_command(update.effective_user.id, "help")
     
